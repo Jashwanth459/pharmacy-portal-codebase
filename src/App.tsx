@@ -26,16 +26,16 @@ function App() {
 
       {/* Navigation */}
       <nav style={{ padding: 16 }}>
-        <Link to="/" style={{ marginRight: 12 }}>Generate</Link>
-        <Link to="/report" style={{ marginRight: 12 }}>Report</Link>
-        <Link to="/upload" style={{ marginRight: 12 }}>Upload</Link>
+        <Link to="/pharmacy-portal/" style={{ marginRight: 12 }}>Upload</Link>
+        <Link to="/pharmacy-portal/generate" style={{ marginRight: 12 }}>Generate</Link>
+        <Link to="/pharmacy-portal/report" style={{ marginRight: 12 }}>Report</Link>
       </nav>
 
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<GeneratePage />} />
-        <Route path="/report" element={<ReportPage />} />
-        <Route path="/upload" element={<UploadPage />} />
+        <Route path="/pharmacy-portal/" element={<UploadPage />} />
+        <Route path="/pharmacy-portal/generate" element={<GeneratePage />} />
+        <Route path="/pharmacy-portal/report" element={<ReportPage />} />
       </Routes>
     </Router>
   );
